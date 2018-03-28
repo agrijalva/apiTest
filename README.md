@@ -9,8 +9,8 @@ Para su funcionameinto se debera considerar las siguientes correcciones:
 Primero inicializar con la configuracion de las rutas de las carpetas de los controles
 que se encuentra en la siguiente ruta: __include/config.php__
     
-    define('APP_PATH', $_SERVER['DOCUMENT_ROOT'] . '/pfiscal/restapi/v1/app');
-    define('LIB_PATH', $_SERVER['DOCUMENT_ROOT'] . '/pfiscal/restapi/libs');
+    define('APP_PATH', $_SERVER['DOCUMENT_ROOT'] . '/apiTest/restapi/v1/app');
+    define('LIB_PATH', $_SERVER['DOCUMENT_ROOT'] . '/apiTest/restapi/libs');
     
 Estas direcciones se ven reflejadas en el archivo de inclución de librerias en __Autoload__
 
