@@ -1,4 +1,4 @@
-# Este es un pequeño backend utilizando la libreria Slim
+# Backend utilizando la libreria Slim
 
 # restAPI
 
@@ -8,7 +8,7 @@ Para su funcionameinto se debera considerar las siguientes correcciones:
 
 Primero inicializar con la configuracion de las rutas de las carpetas de los controles
 que se encuentra en la siguiente ruta: __include/config.php__
-
+    
     define('APP_PATH', $_SERVER['DOCUMENT_ROOT'] . '/pfiscal/restapi/v1/app');
     define('LIB_PATH', $_SERVER['DOCUMENT_ROOT'] . '/pfiscal/restapi/libs');
     
@@ -17,13 +17,14 @@ Estas direcciones se ven reflejadas en el archivo de inclución de librerias en 
 ## Conexión a mySQL
 
 Este API establece una conexión con mySQL como manejador de base de datos y para ello es necesario
-realizar la configuracion en la siguiente archivo __v1/app/model/Connection.class.php__ en el se
-debera sustituir los datos por los da cada servidor de las siguientes variables:
+realizar la configuracion en la siguiente archivo __include/config.php__ en el se
+debera sustituir los datos por los da cada servidor de las siguientes variables mismos que se 
+utilizaran en la configuración en la conexión __v1/app/model/Connection.class.php__:
 
-    $this->BaseDatos = "asesoria";
-    $this->Servidor  = "localhost";
-    $this->Usuario 	 = "root";
-    $this->Clave	 = "";
+    define('DB_HOST', 		'localhost');
+    define('DB_USERNAME', 	'root');
+    define('DB_PASSWORD', 	'');
+    define('DB_NAME', 		'db_test');
     
 ## Estructura de una clase
 
